@@ -81,9 +81,6 @@
 					<a href="#" class="navigate-down"></a>
 				</section>
 
-				<section data-markdown="conclusion.md"
-								 data-separator-notes="^Note:"></section>
-
 				<section>
 					<h3>Scénario d'attaque sur DVB-T</h3>
 					<p><b>Principe :</b> exécution d'une application HbbTV signalée dans le flux DVB. L'Application Information Table (AIT) pointe définit l'application chargée pour une chaîne.</p>
@@ -128,6 +125,8 @@
 						50 à 1km pour la zone rouge, quelques centaines de mètre à quelques km pour la zone grise
 					</aside>
 				</section>
+				<section data-markdown="conclusion.md"
+								 data-separator-notes="^Note:"></section>
 			</div>
 		</div>
 
@@ -152,6 +151,7 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+			Reveal.configure({ slideNumber: true });
 		</script>
 	</body>
 </html>
