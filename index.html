@@ -32,6 +32,7 @@
 						Sec Sdf
 					</h4>
 					<p>
+						Smart TVs: Security of DVB-T, ANSSI<br><br>
 						<small>Alan Camilo Herrera<br>
 						Kevin Phouratsamay</small><br>
 						<img src="CNAM_Logo.png" width="20%">
@@ -64,6 +65,50 @@
 						Types d'attaques network level + DVB-T stream level<br>
 						Pour toi Kevin !
 					</h3>
+				</section>
+				<section>
+					<h3>Scénario d'attaque sur DVB-T</h3>
+					<p><b>Principe :</b> exécution d'une application HbbTV signalée dans le flux DVB. L'Application Information Table (AIT) pointe définit l'application chargée pour une chaîne.</p>
+					<p>
+						2 modes de téléchargement d'une application :
+						<ol>
+							<li>Téléchargement par HTTP(S)</li>
+							<li>Téléchargement par DVB (carousel)</li>
+						</ol>
+					</p>
+					<p>
+						Exécution automatique de l'application possible dès que l'utilisateur regarde une chaîne
+						<aside class="notes"></aside>
+					</p>
+				</section>
+				<section>
+					<p>Emission d'un signal sur les bandes de fréquence réservées  aux diffuseurs TV</p>
+					<img src="DVB-T_attack.png">
+					<p>Setup : ~150€ de matériel de réception/émission DVB-T et les logiciels libres pour démoduler, modifier, injecter, moduler et émettre<br>
+						Infection en ~10 secondes
+					<aside class="notes">
+						similaire à Man In the Middle mais protocoles différents
+					</aside>
+				</section>
+				<section>
+					<h3>HbbTV malveillante</h3>
+					<ol>
+						<li>Application JavaScript</li>
+					<li>Architecture client-serveur</li>
+					<li>Exploitation de failles de navigateur non patché</li>
+					<li>Intraçable</li>
+					<li>Aucunte interaction de l'utilisateur nécessaire</li>
+					<aside class="notes">Chargement de code à distance</aside>
+				</section>
+				<section>
+					<figure>
+						<img src="attack_range.png">
+						<figcaption>Threats and Limitations of Terrestrial
+							Broadcast Attacks, IEEE</figcaption>
+					</figure>
+					<aside class="notes">
+						50 à 1km pour la zone rouge, quelques centaines de mètre à quelques km pour la zone grise
+					</aside>
 				</section>
 			</div>
 		</div>
